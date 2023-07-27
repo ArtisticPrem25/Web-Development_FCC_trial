@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset id="first_set">
+            <label for="first_name">Enter Your First Name:</label>
+            <input type="text" name="account_details" id="f_name" required>        
+            <label for="Last_name">Enter Your Last Name:</label>
+            <input type="text" name="account_details" id="l_name" required>        
+            <label for="email">Enter Your Email:</label>
+            <input type="email" name="account_details" id="email" required>        
+            <label for="password">Create a New Password:</label>
+            <input type="password" pattern="[a-z0-5]{8,}" name="account_details" id="pass" required>        
+        </fieldset>
+        <fieldset id="second_set">
+            <label for="personal_acc"><input class="inline" type="radio" name="personal_business" id="personal_acc"> Personal Account</label>
+            <label for="business_acc"><input class="inline" type="radio" name="personal_business" id="business_acc"> Business Account</label>
+            <label for="t_and_c"><input class="inline" type="checkbox" name="terms_condition" id="t_and_c" required> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        </fieldset>
+        <fieldset id="third_set">
+            <label for="img">Upload a profile picture: <input type="file" id="img" name="img"></label>
+            <label for="age">Input your age (years): <input type="number" id="age" name="age" min="13" max="120"></label>
+            <label for="dropdown">How did you hear about us?
+                <select id="dropdown" name="referal_options">
+                    <option value="sel_one">(select one)</option>
+                    <option value="fcc_news">freeCodeCamp News</option>
+                    <option value="fcc_yt">freeCodeCamp YouTube Channel</option>
+                    <option value="fcc_forum">freeCodeCamp Forum</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio: <textarea id="bio" rows="3" cols="30" name="bio" placeholder="I like coding on the beach..."></textarea></label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
