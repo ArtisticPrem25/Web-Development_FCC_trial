@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Calculator</title>
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="calculator">
+            <div class="display">
+                <div class="operation" id="display-operation">2 + 3</div>
+                <div class="answer" id="display-answer">5</div>
+            </div>
+        <!-- Buttons -->
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-secondary btn-block left-btn redbtn" onclick="clearDisplay()">C</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block backspace" onclick="backspace()">←</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block operators" onclick="appendToDisplay('%')">%</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block operators" onclick="appendToDisplay('/')">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary btn-block left-btn numbers" onclick="appendToDisplay('7')">7</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('8')">8</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('9')">9</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block operators" onclick="appendToDisplay('*')">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary btn-block left-btn numbers" onclick="appendToDisplay('4')">4</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('5')">5</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('6')">6</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block operators" onclick="appendToDisplay('-')">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-primary btn-block left-btn numbers" onclick="appendToDisplay('1')">1</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('2')">2</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('3')">3</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block operators" onclick="appendToDisplay('+')">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button class="btn btn-primary btn-block left-btn-span numbers" onclick="appendToDisplay('0')">0</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-primary btn-block numbers" onclick="appendToDisplay('.')">.</button>
+            </div>
+            <div class="col-3">
+                <button class="btn btn-secondary btn-block eql" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <!-- Add Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Create calculator.js file and link it here -->
+</body>
+
+</html>

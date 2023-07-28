@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Inter:wght@300&family=Montserrat:ital,wght@0,300;1,400&display=swap');
+body {
+    background-color: #EFEFF2;
+}
+
+.mt-5{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F3;
+}
+/* Mechanical-themed design */
+.calculator {
+    width: 362px;
+    margin: 0;
+    background-color:#F0F0F3;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.display {
+    width: 90.6%;
+    background-color: #F0F0F3;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: 2px solid #4952559f;
+    border-radius: 12px;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+.answer {
+    font-family: 'Digital-7 Mono', sans-serif;
+    font-size: 33px;
+    color: #495255;
+}
+.row{
+    width:100%
+}
+.row>div {
+    padding: 10px;
+}
+.btn {
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    /* Remove the grey border */
+}
+.btn.operators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39847c;
+}
+.btn.operators:hover {
+    background-color: #206b62;
+}
+.btn.numbers {
+    background-color:#F0F0F3;
+    color:#728AB7;
+}
+.btn.numbers:hover {
+    background-color:#F0F0F3;
+    color: #728AB7;
+}
+.btn.eql {
+    background-color: #ffe657;
+    color: #333232;
+}
+.btn.eql:hover {
+    background-color:#efcb03;
+    color: #333232ab;
+}
+.backspace{
+    background-color:#448EF6;
+}
+.backspace:hover{
+    background-color:#2d64b1;
+}
+.redbtn{
+    background-color: #EE2B47 ;
+    color:#F0F0F3;
+}
+.redbtn:hover {
+    background-color: #b01a31;
+}
+.left-btn{
+    margin-left: 5px;
+}
+.left-btn-span{
+    margin-left: 5px;
+    border:none;
+    width: 145px;
+}
+
+/* Mobile style adjustments */
+@media (max-width: 576px) {
+    .calculator-container {
+        width: 100%;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+}
